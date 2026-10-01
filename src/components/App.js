@@ -9,7 +9,7 @@ const App = () => {
 
     const rawInput = e.target.value
 
-    const greeting = rawInput === "" ?"":`Hello, ${rawInput}`;
+    const greeting = rawInput.trim() === "" ? "" : `Hello, ${rawInput}`;
 
     setInput(greeting)
   }
