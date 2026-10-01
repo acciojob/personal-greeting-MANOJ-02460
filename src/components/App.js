@@ -9,7 +9,9 @@ const App = () => {
 
     const rawInput = e.target.value
 
-    setInput(`Hello ${rawInput}`)
+    const greeting = rawInput === "" ?"":`Hello, ${rawInput}`;
+
+    setInput(greeting)
   }
   return (
     <div>
